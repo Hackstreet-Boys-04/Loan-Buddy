@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home Loan | Loan Buddy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="homeloan.css">
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <h1>Home Loans</h1>
+  <p>Everything you need to know about Home Loans</p>
+</header>
+
+<!-- ABOUT -->
+<section class="section">
+  <h2>What is a Home Loan?</h2>
+  <p>
+    A home loan is a secured loan provided by banks or financial institutions to help individuals
+    purchase, construct, or renovate a residential property. The property itself acts as collateral.
+    Home loans usually have lower interest rates and longer repayment tenures.
+  </p>
+</section>
+
+<!-- TYPES -->
+<section class="section light-bg">
+  <h2>Types of Home Loans</h2>
+  <div class="card-container">
+    <div class="card">Home Purchase Loan</div>
+    <div class="card">Home Construction Loan</div>
+    <div class="card">Home Improvement Loan</div>
+    <div class="card">Home Extension Loan</div>
+    <div class="card">Balance Transfer Loan</div>
+  </div>
+</section>
+
+<!-- ELIGIBILITY -->
+<section class="section">
+  <h2>Home Loan Eligibility Criteria</h2>
+  <ul class="list">
+    <li>Applicant must be an Indian citizen</li>
+    <li>Age between 21 to 65 years</li>
+    <li>Stable income source (Salaried or Self-employed)</li>
+    <li>Good credit score (700 or above)</li>
+    <li>Stable employment or business history</li>
+    <li>Loan amount depends on income & repayment capacity</li>
+  </ul>
+</section>
+
+<!-- DOCUMENTS -->
+<section class="section light-bg">
+  <h2>Documents Required</h2>
+  <ul class="list">
+    <li>Identity Proof (Aadhaar, PAN, Passport, Voter ID)</li>
+    <li>Address Proof (Utility bill, Aadhaar, Passport)</li>
+    <li>Income Proof (Salary slips / IT Returns)</li>
+    <li>Bank Statements (Last 6 months)</li>
+    <li>Property Documents</li>
+    <li>Employment or Business Proof</li>
+    <li>Passport-size Photographs</li>
+  </ul>
+</section>
+
+<!-- BENEFITS -->
+<section class="section">
+  <h2>Benefits of Taking a Home Loan</h2>
+  <div class="card-container">
+    <div class="card">Affordable interest rates</div>
+    <div class="card">Long repayment tenure (10–30 years)</div>
+    <div class="card">Tax benefits</div>
+    <div class="card">No full upfront payment</div>
+    <div class="card">Builds long-term assets</div>
+  </div>
+</section>
+
+<!-- ELIGIBILITY CHECKER -->
+<section class="section light-bg">
+  <h2>Home Loan Eligibility Checker</h2>
+
+  <div class="checker-box">
+    <input type="number" id="age" placeholder="Your Age">
+    <input type="number" id="income" placeholder="Monthly Income (₹)">
+    <input type="number" id="credit" placeholder="Credit Score">
+    <input type="number" id="tenure" placeholder="Loan Tenure (Years)">
+    <button onclick="checkEligibility()">Check Eligibility</button>
+    <p id="result"></p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2025 Loan Buddy | Home Loan Information</p>
+</footer>
+<script src="homeloan.js"></script>
+</body>
+</html>

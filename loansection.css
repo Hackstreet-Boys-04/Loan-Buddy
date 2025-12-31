@@ -1,0 +1,85 @@
+body{
+    background-image: url(background1.jpg);
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.heading {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #c1b4f1;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #f3ebeb;
+  margin-bottom: 50px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.loan-card {
+  
+  background-image: url(background2.jpg);
+  background-size: cover;
+  border-radius: 18px;
+  height: 300px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.loan-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.15);
+}
+
+.loan-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #0b3aa7;
+}
+
+.loan-card p {
+  font-size: 14px;
+  color: #334155;
+  margin-bottom: 15px;
+}
+
+.loan-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.loan-card ul li {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #475569;
+}
+
+.loan-card ul li strong {
+  color: #0f172a;
+}
+.loan-card button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(135deg, #3b82f6, #9333ea);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+.loan-card button:hover {
+  opacity: 0.85;
+}
