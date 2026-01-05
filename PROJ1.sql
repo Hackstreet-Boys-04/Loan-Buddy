@@ -416,6 +416,62 @@ BEGIN
     AND e.tier_id = tier_input;
 END //
 DELIMITER ;
+CREATE DATABASE user;
+USE user;
+CREATE TABLE users(
+user_id INT AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(100) NOT NULL,
+email VARCHAR(100) NOT NULL UNIQUE,
+mobile_number VARCHAR(10) NOT NULL UNIQUE,
+password_hash VARCHAR(250) NOT NULL,
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+DELIMITER //
+
+CREATE PROCEDURE signup_user (
+    IN p_full_name VARCHAR(100),
+    IN p_email VARCHAR(100),
+    IN p_mobile_number VARCHAR(15),
+    IN p_password_hash VARCHAR(255)
+)
+BEGIN
+    IF EXISTS (SELECT 1 FROM users WHERE email = p_email) THEN
+        SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'Email already registered';
+    ELSE
+        INSERT INTO users (full_name, email, mobile_number, password_hash)
+        VALUES (p_full_name, p_email, p_mobile_number, p_password_hash);
+    END IF;
+END //
+
+DELIMITER ;
+DELIMITER //
+
+CREATE PROCEDURE validate_login (
+    IN p_email VARCHAR(100),
+    IN p_password_hash VARCHAR(255)
+)
+BEGIN
+    SELECT user_id, full_name
+    FROM users
+    WHERE email = p_email AND password_hash = p_password_hash;
+END //
+
+DELIMITER ;
+DELIMITER //
+
+CREATE PROCEDURE update_password (
+    IN p_email VARCHAR(100),
+    IN p_new_password_hash VARCHAR(255)
+)
+BEGIN
+    UPDATE users
+    SET password_hash = p_new_password_hash
+    WHERE email = p_email;
+END //
+
+DELIMITER ;
+
 
 
 
