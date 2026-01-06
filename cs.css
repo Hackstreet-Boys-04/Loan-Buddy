@@ -125,3 +125,193 @@ body {
   text-align: center;
   padding: 20px;
 }
+
+/* chatbot */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Floating Button */
+.chat-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 56px;
+  height: 56px;
+  background: #4f46e5;
+  color: #fff;
+  font-size: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  z-index: 9999;
+}
+
+/* Chat Widget */
+.chat-widget {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 330px;
+  height: 450px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  animation: slideUp 0.3s ease;
+  z-index: 9999;
+}
+
+/* Header */
+.chat-header {
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: #fff;
+  padding: 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+.chat-header button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Body */
+.chat-body {
+  flex: 1;
+  padding: 12px;
+  background: #f8fafc;
+  overflow-y: auto;
+}
+
+/* Messages */
+.message {
+  max-width: 75%;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  border-radius: 16px;
+  font-size: 14px;
+  animation: fadeIn 0.2s ease;
+}
+
+.bot {
+  background: #e0e7ff;
+  color: #1e1b4b;
+  align-self: flex-start;
+}
+
+.user {
+  background: #4f46e5;
+  color: #fff;
+  align-self: flex-end;
+}
+
+/* Footer */
+.chat-footer {
+  display: flex;
+  border-top: 1px solid #e5e7eb;
+}
+
+.chat-footer input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.chat-footer button {
+  background: #4f46e5;
+  color: #fff;
+  border: none;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+/* Animations */
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .chat-widget {
+    left: 10px;
+    right: 10px;
+    width: auto;
+    height: 70vh;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

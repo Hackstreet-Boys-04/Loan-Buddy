@@ -8,13 +8,12 @@
 </head>
 <body>
 
-<!-- HEADER -->
+
 <header class="heading">
   <h1>Customer Support</h1>
   <p>We’re here to help you with all your loan-related queries</p>
 </header>
 
-<!-- SUPPORT OPTIONS -->
 <section class="support-section">
   <h2>How can we help you?</h2>
 
@@ -27,7 +26,7 @@
     </div>
 
     <div class="support-card">
-      <h3>📧 Email Support</h3>
+      <h3> Email Support</h3>
       <p>Send us your queries and we’ll respond quickly.</p>
       <span>support@loanbuddy.com</span>
     </div>
@@ -41,7 +40,7 @@
   </div>
 </section>
 
-<!-- FAQ -->
+
 <section class="faq-section">
   <h2>Frequently Asked Questions</h2>
 
@@ -61,7 +60,7 @@
   </div>
 </section>
 
-<!-- CONTACT FORM -->
+
 <section class="contact-section">
   <h2>Contact Us</h2>
 
@@ -73,10 +72,32 @@
   </form>
 </section>
 
-<!-- FOOTER -->
+<div class="chat-toggle" onclick="toggleChat()">💬</div>
+
+
+<div class="chat-widget" id="chatWidget">
+  <div class="chat-header">
+    <span>Chat Buddy </span>
+    <button onclick="toggleChat()">×</button>
+  </div>
+
+  <div class="chat-body" id="chatBody">
+    <div class="message bot">Hi 👋 I'm Loan Buddy. How can I help you?</div>
+  </div>
+
+  <div class="chat-footer">
+    <input type="text" id="chatInput" placeholder="Ask about loans..." />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
+
+
+<script src="chatbot.js"></script>
+
 <footer class="footer">
   <p>© 2025 Loan Buddy | Customer Support</p>
 </footer>
+
 
 </body>
 </html>

@@ -10,7 +10,6 @@ body {
   color: #1e293b;
 }
 
-/* HERO */
 .hero {
   background: linear-gradient(135deg, #0ea5e9, #2563eb);
   color: white;
@@ -23,7 +22,7 @@ body {
   font-size: 42px;
 }
 
-/* SECTIONS */
+
 .section {
   padding: 70px 10%;
 }
@@ -37,7 +36,7 @@ body {
   background: linear-gradient(135deg, #cac9fa, #b196db);
 }
 
-/* CARDS */
+
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -53,7 +52,7 @@ body {
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
-/* LIST */
+
 .list {
   list-style: none;
 }
@@ -66,7 +65,7 @@ body {
   border-radius: 10px;
 }
 
-/* CHECKER */
+
 .checker-box {
   max-width: 420px;
   margin: auto;
@@ -99,7 +98,7 @@ body {
   text-align: center;
 }
 
-/* FOOTER */
+
 .footer {
   background: #0f172a;
   color: #cbd5e1;

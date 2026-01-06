@@ -15,9 +15,21 @@ function checkEligibility() {
 
   if (age >= 21 && age <= 60 && income >= 15000 && credit >= 700 && emiRatio <= 40) {
     result.style.color = "green";
-    result.innerText = "🎉 You are eligible for a Personal Loan!";
+    result.innerText = "You are eligible for a Personal Loan!";
   } else {
     result.style.color = "red";
-    result.innerText = "❌ You are not eligible for a Personal Loan.";
+    result.innerText = "You are not eligible for a Personal Loan.";
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+

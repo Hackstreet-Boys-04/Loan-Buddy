@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url(background1.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.emi-container {
+  background: #ffffff;
+  padding: 24px;
+  width: 400px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.emi-container h2 {
+  text-align: center;
+  margin-bottom: 16px;
+  color: #1e293b;
+}
+
+label {
+  font-size: 14px;
+  margin-top: 10px;
+  display: block;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  border-radius: 8px;
+  border: 1px solid #cbd5f1;
+}
+
+button {
+  width: 100%;
+  margin-top: 16px;
+  padding: 12px;
+  background: linear-gradient(135deg, #3b82f6, #9333ea);
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+
+
+.result {
+  margin-top: 16px;
+  background: #eef2ff;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 14px;
+}

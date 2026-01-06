@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EMI Calculator</title>
+  <link rel="stylesheet" href="emicalculator.css">
+</head>
+<body>
+
+<div class="emi-container">
+  <h2>EMI Calculator</h2>
+
+  <label>Loan Type</label>
+  <select id="loanType">
+    <option value="home">Home Loan</option>
+    <option value="personal">Personal Loan</option>
+    <option value="education">Education Loan</option>
+    <option value="business">Business Loan</option>
+  </select>
+
+  <label>Loan Amount (₹)</label>
+  <input type="number" id="amount" placeholder="Enter amount">
+
+  <label>Interest Rate (% per year)</label>
+  <input type="number" id="rate" placeholder="Enter rate">
+
+  <label>Loan Tenure (Years)</label>
+  <input type="number" id="tenure" placeholder="Enter years">
+
+  <button onclick="calculateEMI()">Calculate EMI</button>
+
+  <div class="result" id="result"></div>
+</div>
+
+<script src="emicalculator.js"></script>
+</body>
+</html>

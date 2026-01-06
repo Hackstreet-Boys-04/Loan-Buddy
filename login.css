@@ -7,7 +7,7 @@
 
 body {
     height: 100vh;
-    background-image:url(background1.jpg);
+    background-image: url(background1.jpg);
     background-size: cover;
     display: flex;
     align-items: center;
@@ -50,7 +50,7 @@ body {
 .login-container button {
     width: 100%;
     padding: 12px;
-    background: #14105f;
+    background: linear-gradient(135deg, #3b82f6, #9333ea);
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -72,4 +72,3 @@ body {
     text-decoration: none;
     color: #4f46e5;
 }
-
